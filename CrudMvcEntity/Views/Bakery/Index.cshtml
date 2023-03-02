@@ -1,0 +1,28 @@
+﻿@model List<CrudMvcEntity.Models.Domain.Bakery>
+
+@{
+}
+<h1>Bakery List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var bakery in Model)
+        {
+            <tr>
+                <td>@bakery.Id</td>
+                <td>@bakery.Name</td>
+                <td>@bakery.Description</td>
+                <td><a href="Bakery/View/@bakery.Id">View</a></td>
+
+            </tr>
+        }
+    </tbody>
+</table>

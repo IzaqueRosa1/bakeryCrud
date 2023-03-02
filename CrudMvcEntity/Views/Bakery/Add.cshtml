@@ -1,0 +1,17 @@
+﻿@model CrudMvcEntity.Models.AddBakeryViewModel
+    
+@{
+}
+<h1>Add Bakery</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description">
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
